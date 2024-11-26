@@ -1,0 +1,20 @@
+<div class="chat-container">
+  <div class="chat-users">
+    <div class="chat-header">Users</div>
+    <div id="users"></div>
+  </div>
+  <div class="chat">
+    <div class="chat-header">Chat</div>
+    <div id="messages"></div>
+  </div>
+</div>
+<div class="chat-message">
+  <form id="chatForm">
+    <div class="form-control">
+      <label for="msg">{{user}} Message:</label>
+      <input id="name" type="hidden" value="{{user}}" />
+      <input id="msg" class="msg-input" />
+      <input type="submit" value="Send" id="sendBtn" />
+    </div>
+  </form>
+</div>

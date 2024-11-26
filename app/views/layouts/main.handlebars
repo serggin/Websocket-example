@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>WS-example</title>
+    <link href="style.css" rel="stylesheet" />
+    {{#if script}}
+      <script src="{{script}}" type="module"></script>
+    {{/if}}
+  </head>
+  <body>
+    <div class="header">
+      <div>WebSocket Example</div>
+      {{#if user}}
+        <div>{{user}}</div>
+      {{/if}}
+      {{#if logout}}
+        <div><a href="/logout">Logout</a></div>
+      {{/if}}
+    </div>
+    {{{body}}}
+  </body>
+</html>

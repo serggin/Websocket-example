@@ -1,0 +1,11 @@
+{
+  "extends": "@tsconfig/node20/tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "app",
+    "outDir": "dist",
+    "lib": ["dom"]
+    //"noImplicitAny": false
+  },
+  //"include": ["src/server/**/*"]
+  "include": ["app/**/*"]
+}
